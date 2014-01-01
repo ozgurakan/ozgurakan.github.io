@@ -1,0 +1,44 @@
+---
+layout: bootstrap_post
+title: Salt Mine
+date: 2013-06-05 22:56:00
+author: Oz Akan oz@humankeyboard.com
+abstract: Salt without mine would be no salt at all.
+categories:
+    - SaltStack
+---
+
+Soon after you start to use SaltStack you will find your minions in a need to know more about other minions around. Your web server will like to know what database servers are there so that it can put it to its configuration file. You application running on hundereds of web serves will like to add that five more webcahced servers you added to the environment automatically. Your minions are going to be demandind. Once you start your journey on  automation, often times, you will feel like you are walking while you have to run.
+
+Your minions are going to have needs, desires, soon peronality. It is not far, you will see, you will start to respect them as individuals. Each change you make, is going to make you shiver, not being sure what the effect will be in the ocean of code you have developed for your almost self-acting minion army.
+
+Anyway, all start with Salt Mine.
+
+Mine is catalog stored on salt-master and populated by salt-minions.
+
+It all starts with a few lines in ```/etc/salt/minion```
+
+    mine_functions:
+      test.ping: []
+      grains.items: []
+
+After restarting ```salt-minion``` process, minion will start reporting ping results and grains to master.
+
+If you do this on all minions, then monion named server-a can get grain information of minion named server-b. How? Below:
+
+    salt['mine.get']('id:server-b', 'grains.items', expr_form='grain')
+
+This will return a dictionary.
+
+As of today these are the matchers:
+
+    glob
+    pcre
+    grain
+    grain_pcre
+    pillar
+
+Enough talk, gimme the operating system or somethin useful?
+
+Hey, don't be so lazy. Loop over the dictionary and find it on your own.
+
