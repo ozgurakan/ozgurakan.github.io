@@ -46,12 +46,12 @@
       <div class="starter-template">
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <p class="lead">{{ post.abstract }}</p>
-        <h6>First Published: {{ post.date | date_to_string }},   
+        <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},   
         Filed Under: 
           {% for category in post.categories %}
           <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
           {% endfor %}
-        </h6>
+        </small>
       </div>
       <hr>
       {% endfor %}    
