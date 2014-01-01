@@ -51,13 +51,13 @@
           {% for category in post.categories %}
           <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
           {% endfor %}
-        </h6>        
+        </h6>
       </div>
       <hr>
       {% endfor %}    
 
       <footer>
-        <p class="lead">&copy; {{ site.name }} 2014</p>
+        {% include footer.html %}
       </footer>
     </div> <!-- /container -->
 
