@@ -12,11 +12,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">            
-            <li><a> [ </a></li>
             {% for category in site.categories %}
             <li><a href="{{ site.url}}/{{ category | first }}.html">{{ category | first }}</a></li>
             {% endfor %}
-            <li><a> ] </a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#" data-toggle="modal" data-target="#myModal">Subscribe</a></li>
