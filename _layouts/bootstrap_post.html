@@ -25,6 +25,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <!-- share this header -->
+    {% include share_this_header.html %}    
   </head>
 
   <body>
@@ -54,6 +56,13 @@
       <hr>
 
       <div>
+        <p class="lead">Wanna Share?</p>
+        <p>{% include share_this_icons.html %}</p>
+      </div>
+
+      <hr>
+
+      <div>
         <p>{% include disqus.html %}</p>
       </div>
 
@@ -70,7 +79,7 @@
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- google analytics-->
-    {% include track_usage.html%}
+    {% include track_usage.html %}
 
   </body>
-</html>
+</html> 
