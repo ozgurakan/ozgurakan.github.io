@@ -10,9 +10,9 @@ categories:
 
 Soon after you start to use SaltStack you will find your minions in a need to know more about other minions around. Your web server will like to know what database servers are there so that it can put it to its configuration file. You application running on hundereds of web serves will like to add that five more webcahced servers you added to the environment automatically. Your minions are going to be demanding. Once you start your journey on  automation, often times, you will feel like you are walking while you have to run.
 
-Your minions are going to have needs, desires, soon peronality. It is not far, you will see, you will start to respect them as individuals. Each change you make, is going to make you shiver, not being sure what the effect will be in the ocean of code you have developed for your almost self-acting minion army.
+Your minions are going to have needs, desires, soon personality. It is not far, you will see, you will start to respect them as individuals. Each change you make, is going to make you shiver, not being sure what the effect will be in the ocean of code you have developed for your almost self-acting minion army.
 
-Anyway, all start with Salt Mine.
+Our story leads us to Salt Mine.
 
 Mine is catalog stored on salt-master and populated by salt-minions.
 
