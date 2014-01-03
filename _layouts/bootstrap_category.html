@@ -49,7 +49,7 @@
         <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},   
         Filed Under: 
           {% for category in post.categories %}
-          <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
+          <a href="/{{ category }}.html">{{ category }}</a> 
           {% endfor %}
         </small>
       </div>

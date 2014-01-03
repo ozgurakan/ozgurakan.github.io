@@ -1,3 +1,5 @@
 name: Human Keyboard
 markdown: redcarpet
 pygments: true
+domain: www.humankeyboard.com
+permalink: /:categories/:year/:title.html

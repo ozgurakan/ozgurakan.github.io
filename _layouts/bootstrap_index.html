@@ -45,20 +45,27 @@
     </div>
 
     <div class="container">
-      {% for post in site.posts %}
-      <div class="starter-template">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p class="lead">{{ post.abstract }}</p>
-        <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},   
-        Filed Under: 
-          {% for category in post.categories %}
-          <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
-          {% endfor %}
-        </small>
+      <div class="row">
+        <div class="col-md-9">
+          {% for post in site.posts %}
+          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <p class="lead">{{ post.abstract }}</p>
+          <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},   
+          Filed Under: 
+            {% for category in post.categories %}
+            <a href="/{{ category }}.html">{{ category }}</a> 
+            {% endfor %}
+          </small>
+          <hr>
+          {% endfor %}          
+        </div>
+        <div class="col-md-3">
+          {% include twitter_timeline_humankeyboard.html %}
+        </div>
       </div>
-      <hr>
-      {% endfor %}
+    </div> <!-- /container -->
 
+    <div class="container">      
       <footer>
         {% include footer.html %}
       </footer>
