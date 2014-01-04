@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: How To Restart Salt Minion
 date: 2013-12-31 10:58:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: It is not so easy to restart salt minion but sure there is a way.
 categories:
     - SaltStack

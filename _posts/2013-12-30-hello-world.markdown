@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: Salt Publish vs Mine
 date: 2013-12-30 22:56:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: Salt has two ways to access minion information. One of them is called publish other one is called mine.
 categories:
     - SaltStack

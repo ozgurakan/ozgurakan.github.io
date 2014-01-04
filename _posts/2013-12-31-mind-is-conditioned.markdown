@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: Mind Is Conditioned
 date: 2013-09-15 22:56:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: Are you the solution or part of the problem?
 categories:
     - think

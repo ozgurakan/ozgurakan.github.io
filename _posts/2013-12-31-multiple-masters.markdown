@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: Multiple Salt Masters
 date: 2013-10-02 22:56:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: The first time I heard it, I was pretty excited. The first time I used it, I was impressed.
 categories:
     - SaltStack

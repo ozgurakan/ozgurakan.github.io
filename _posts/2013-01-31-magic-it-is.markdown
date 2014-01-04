@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: Magic It Is
 date: 2013-07-09 22:56:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: The simpler it gets the more familiar we feel ourselves.
 categories:
     - think

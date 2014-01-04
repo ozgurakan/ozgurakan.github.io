@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: Execution Order and Overstate
 date: 2013-06-05 23:00:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: Execution order is important while provisioning new servers, while creating environments for the first time or while setting up an database service.
 categories:
     - SaltStack

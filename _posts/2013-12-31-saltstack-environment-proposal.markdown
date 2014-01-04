@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: SaltStack Environment Proposal
 date: 2013-12-31 10:58:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: Managing environments is a challange with any configuration management tool. Let's see how we can solve it with SaltStack.
 categories:
     - SaltStack

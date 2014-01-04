@@ -43,11 +43,13 @@
       <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ page.abstract }}</p>
-        <small style="font-size: 75%">First Published: {{ page.date | date_to_string }},   
+        <small style="font-size: 75%">Published on: {{ page.date | date_to_string }} |    
         Filed Under: 
           {% for category in page.categories %}
           <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
           {% endfor %}
+          | Author: {{ page.author }} 
+          {% include social.html author=page.author type="plus_icon" %}
         </small>
       </div>
     </div>
@@ -63,7 +65,7 @@
           <p>{% include disqus.html %}</p>    
         </div>
         <div class="col-md-3">
-          {% include twitter_timeline_oz_akan.html %}
+          {% include social.html author=page.author type="twitter_timeline" %}
         </div>
       </div>
     </div> <!-- /container -->

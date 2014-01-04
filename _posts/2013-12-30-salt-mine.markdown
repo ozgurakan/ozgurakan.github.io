@@ -2,7 +2,7 @@
 layout: bootstrap_post
 title: Salt Mine
 date: 2013-06-05 22:56:00
-author: Oz Akan oz@humankeyboard.com
+author: Oz Akan
 abstract: Salt without mine would be no salt at all.
 categories:
     - SaltStack
