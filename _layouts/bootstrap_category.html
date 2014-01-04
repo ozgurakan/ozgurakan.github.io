@@ -17,6 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
 
+    <!-- My Own styles -->
+    <link href="/css/custom.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -28,39 +31,36 @@
   </head>
 
   <body>
+    <div id="wrap">
+      <!-- Static navbar -->
+      {% include navbar.html %}
 
-    <!-- Static navbar -->
-    {% include navbar.html %}
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Category: {{ page.my_category }}</h1>
+          <p>{{ page.abstract }}</p>
+        </div>
+      </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
       <div class="container">
-        <h1>Category: {{ page.my_category }}</h1>
-        <p>{{ page.abstract }}</p>
-      </div>
+        {% assign my_category = page.my_category | downcase %}
+        {% for post in site.categories[my_category] %}
+        <div class="starter-template">
+          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <p class="lead">{{ post.abstract }}</p>
+          <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},   
+          Filed Under: 
+            {% for category in post.categories %}
+            <a href="/{{ category }}.html">{{ category }}</a> 
+            {% endfor %}
+          </small>
+        </div>
+        <hr>
+        {% endfor %}    
+      </div> <!-- /container -->
     </div>
-
-    <div class="container">
-      {% assign my_category = page.my_category | downcase %}
-      {% for post in site.categories[my_category] %}
-      <div class="starter-template">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p class="lead">{{ post.abstract }}</p>
-        <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},   
-        Filed Under: 
-          {% for category in post.categories %}
-          <a href="/{{ category }}.html">{{ category }}</a> 
-          {% endfor %}
-        </small>
-      </div>
-      <hr>
-      {% endfor %}    
-
-      <footer>
-        {% include footer.html %}
-      </footer>
-    </div> <!-- /container -->
-
+    {% include footer.html %}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

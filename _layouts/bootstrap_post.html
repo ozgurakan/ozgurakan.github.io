@@ -17,6 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
 
+    <!-- My Own styles -->
+    <link href="/css/custom.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -34,48 +37,44 @@
   </head>
 
   <body>
+    <div id="wrap">
+      <!-- Static navbar -->
+      {% include navbar.html %}
 
-    <!-- Static navbar -->
-    {% include navbar.html %}
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.abstract }}</p>
-        <small style="font-size: 75%">Published on: {{ page.date | date_to_string }} |    
-        Filed Under: 
-          {% for category in page.categories %}
-          <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
-          {% endfor %}
-          | Author: {{ page.author }} 
-          {% include social.html author=page.author type="plus_icon" %}
-        </small>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.abstract }}</p>
+          <small style="font-size: 75%">Published on: {{ page.date | date_to_string }} |    
+          Filed Under: 
+            {% for category in page.categories %}
+            <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
+            {% endfor %}
+            | Author: {{ page.author }} 
+            {% include social.html author=page.author type="plus_icon" %}
+          </small>
+        </div>
       </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <p>{{ content }}</p>
+            <hr>
+            <p class="lead">Wanna Share?</p>
+            <p><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="{{ page.title }}" data-hashtags="{{ page.categories | first }}" data-via="humankeyboard" data-url="http://{{ site.domain }}{{ page.url }}">Tweet</a></p>
+            <hr>
+            <p>{% include disqus.html %}</p>    
+          </div>
+          <div class="col-md-3">
+            {% include social.html author=page.author type="twitter_timeline" %}
+          </div>
+        </div>
+      </div> <!-- /container -->
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9">
-          <p>{{ content }}</p>
-          <hr>
-          <p class="lead">Wanna Share?</p>
-          <p><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="{{ page.title }}" data-hashtags="{{ page.categories | first }}" data-via="humankeyboard" data-url="http://{{ site.domain }}{{ page.url }}">Tweet</a></p>
-          <hr>
-          <p>{% include disqus.html %}</p>    
-        </div>
-        <div class="col-md-3">
-          {% include social.html author=page.author type="twitter_timeline" %}
-        </div>
-      </div>
-    </div> <!-- /container -->
-
-    <div class="container">     
-      <footer>
-        {% include footer.html %}
-      </footer>
-    </div> <!-- /container -->
-
+    {% include footer.html %}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
