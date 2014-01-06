@@ -11,7 +11,7 @@ Folder Layout
 
 ```
 1 /srv/salt/
-2 /srv/salt/rocks
+2 /srv/salt-rocks
 3 /srv/salt/project_name
 4 /srv/salt/project_name/base
 5 /srv/salt/project_name/base/rocks (symbolic link)
