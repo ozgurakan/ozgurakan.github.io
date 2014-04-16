@@ -22,3 +22,10 @@ body {
   height: 60px;
   background-color: #f5f5f5;
 }
+
+p {
+  font-family: 'Ubuntu Mono', Georgia, Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+}
