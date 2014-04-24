@@ -158,7 +158,7 @@ Verify if minion is accepted (we don't yet have minion vm running):
     Unaccepted Keys:
     Rejected Keys:
 
-Copy both public and private key into your host OS file system.
+Copy both public and private keys into your host OS file system.
 
     $ sudo scp minion.p* me@192.168.56.1:~/saltvms
 
