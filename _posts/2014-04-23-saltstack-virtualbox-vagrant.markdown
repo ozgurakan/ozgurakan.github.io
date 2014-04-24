@@ -93,7 +93,7 @@ Vagrant file will have this:
 
     end
 
-You may want to spend some time reading the Vagrant configuration file above as we will take actions below that will match the lines in the Vagrant file.
+You may want to spend some time reading the Vagrant configuration file above as we will take actions below that will match the lines in the Vagrant file. Network interfaces are for OS X, so Linux and Windows host will have differences there.
 
 #### Check Status
 
