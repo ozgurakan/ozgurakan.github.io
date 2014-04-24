@@ -111,7 +111,7 @@ We will start master first and install salt-master there. Then we will create ke
 
     $ vagrant up master
 
-A few lines after, check is ```master``` is up
+A few lines after, check if ```master``` is up
 
     $ vagrant status
     Current machine states:
