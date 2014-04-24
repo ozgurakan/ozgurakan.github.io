@@ -14,7 +14,7 @@ It took a while for me to figure out that it might be a good idea to have a loca
 
 Cycle would go on.
 
-Then, I recognized that, I have a very underutilized laptop which can easily host a good amount of VMs. To be honest, before that, I just wanted to have an environment, which would be just mine. Where I could develop without hesitation to affect others' work in the team. I wanted to checkout my salt-rocks fork quitely, make changes and create a pull request without relying on nothing but my laptop.
+Then, I recognized that, I have a very underutilized laptop which can easily host a good amount of VMs. To be honest, before that, I just wanted to have an environment, which would be just mine. Where I could develop without hesitation to affect others' work in the team. I wanted to checkout my [salt-rocks](https://github.com/rackerlabs/salt-rocks "salt-rocks repo") fork quitely, make changes and create a pull request without relying on nothing but my laptop.
 
 Meanwhile, we have several people in the team working on salt formulas. Even developers that are interested now have their own salt-masters. Thanks to the simplicity of SaltStack, I have never seen this much adoptation in any team before. We have people using Linux, Windows and OS X. I wanted to have a solution that I could replicate for anyone independent of their OS.
 
