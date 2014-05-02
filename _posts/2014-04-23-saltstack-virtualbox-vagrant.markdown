@@ -3,7 +3,7 @@ layout: bootstrap_post
 title: SaltStack + VirtualBox + Vagrant
 date: 2014-04-23 22:11:00
 author: Oz Akan
-abstract: To create the next great SaltStack formula, you need less than I tought you did.
+abstract: To create the next great SaltStack formula, you need less than I thought you did.
 categories:
     - SaltStack
 ---
