@@ -3,7 +3,7 @@ layout: bootstrap_post
 title: SaltStack Sandbox
 date: 2014-04-24 12:44:00
 author: Oz Akan
-abstract: We have created salt-master twice, which is more than once, automating it would be vise!
+abstract: You have created salt-master twice, which is more than once, automating it would be vise!
 categories:
     - SaltStack
 ---
@@ -50,6 +50,10 @@ Boxes are ready to use base images. Download Ubuntu 13.4 (saucy)
     ==> box: Adding box 'saucy' (v0) for provider:
     box: Downloading: https://cloud-images.ubuntu.com/vagrant/saucy/current/saucy-server-cloudimg-amd64-vagrant-disk1.box
     ==> box: Successfully added box 'saucy' (v0) for 'virtualbox'!
+    $ vagrant box add trusty https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+    ==> box: Adding box 'trusty' (v0) for provider:
+    box: Downloading: https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+    ==> box: Successfully added box 'trusty' (v0) for 'virtualbox'!
 
 #### Modify Vagrant File
 
@@ -87,7 +91,7 @@ Vagrant file will have this:
 
     end
 
-You may want to spend some time reading the Vagrant configuration file above as we will take actions below that will match the lines in the Vagrant file. ```"curl -L http://bootstrap.saltstack.org | sudo sh -s -- -M git v2014.1.3"``` indicates that we will use version ```2014.1.3```. You can remove ```git v2014.1.3``` and it will install the latest production version (details [here](http://docs.saltstack.com/en/latest/topics/tutorials/salt_bootstrap.html "salt-stack bootstrap")). Network interfaces are for OS X, so Linux and Windows hosts will have differences there.
+You may want to spend some time reading the Vagrant configuration file above as we will take actions as seen below that will match the lines in the Vagrant file. ```"curl -L http://bootstrap.saltstack.org | sudo sh -s -- -M git v2014.1.3"``` indicates that we will use version ```2014.1.3```. You can remove ```git v2014.1.3``` and it will install the latest production version (details [here](http://docs.saltstack.com/en/latest/topics/tutorials/salt_bootstrap.html "salt-stack bootstrap")). Network interfaces are for OS X, so Linux and Windows hosts will have differences there.
 
 #### Check Status
 
