@@ -32,7 +32,7 @@ salt-minion:
       - file: salt-minion
 ```
 
-We would run this as the first formula, so that salt mine would be enabled, roles are assigned and minion would be ready for the formulas that would use mine and grains to make clever desicions.
+We would run this as the first formula, so that salt mine would be enabled, roles are assigned and minion would be ready for the formulas that would use mine and grains to make clever decisions.
 
 Problem was with restarting the minion.
 
@@ -51,7 +51,7 @@ salt-minion:
 
 Watch statement ensures that service will be restarted when there is a change with ```/etc/salt/minion```. The problem is it never works properly which makes sense but also there could be a work around.
 
-Anyway, there is always a few ways to achive same results with salt. We decided to run a bash script that would restart the minion. But it a regular cmd.run didn't work, for the same reason minion can't restart itself.
+Anyway, there is always a few ways to achieve same results with salt. We decided to run a bash script that would restart the minion. But it a regular cmd.run didn't work, for the same reason minion can't restart itself.
 
 A quick solution to this is, placing that bash script in a cronjob that will run next minute. To this day, it still works.
 
