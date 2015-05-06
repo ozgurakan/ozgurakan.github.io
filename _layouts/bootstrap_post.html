@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
 
-    <!-- google fonts --> 
+    <!-- google fonts -->
     {% include fonts.html %}
 
     <title>{{ page.title }}</title>
@@ -50,12 +50,12 @@
         <div class="container">
           <h1>{{ page.title }}</h1>
           <p>{{ page.abstract }}</p>
-          <small style="font-size: 75%">Published on: {{ page.date | date_to_string }} |    
-          Filed Under: 
+          <small style="font-size: 75%">Published on: {{ page.date | date_to_string }} |
+          Filed Under:
             {% for category in page.categories %}
-            <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a> 
+            <a href="{{ site.url}}/{{ category }}.html">{{ category }}</a>
             {% endfor %}
-            | Author: {{ page.author }} 
+            | Author: {{ page.author }}
             {% include social.html author=page.author type="plus_icon" %}
           </small>
         </div>
@@ -69,7 +69,7 @@
             <p class="lead">Wanna Share?</p>
             <p><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="{{ page.title }}" data-hashtags="{{ page.categories | first }}" data-via="humankeyboard" data-url="http://{{ site.domain }}{{ page.url }}">Tweet</a></p>
             <hr>
-            <p>{% include disqus.html %}</p>    
+            <p>{% include disqus.html %}</p>
           </div>
           <div class="col-md-3">
             {% include social.html author=page.author type="twitter_timeline" %}
@@ -90,4 +90,4 @@
     {% include track_usage.html %}
 
   </body>
-</html> 
+</html>

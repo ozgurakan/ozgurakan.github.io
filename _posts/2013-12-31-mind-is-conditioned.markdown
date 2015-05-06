@@ -20,7 +20,7 @@ If you think you defined the problem but are not able to find an answer, that ju
 
 Problem, is the incomprehension of answer.
 
-<p class="text-right" font-family=verdana>
+<p class="lyrics">
 And I find it kinda funny<br>
 I find it kinda sad<br>
 The dreams in which I'm dying<br>

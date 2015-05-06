@@ -29,3 +29,12 @@ p {
   line-height: 25px;
   color: #333333;
 }
+
+.lyrics {
+  text-align: right;
+  font-family: 'Ubuntu Mono', Georgia, Times, serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+
+}
