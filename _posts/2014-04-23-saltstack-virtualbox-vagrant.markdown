@@ -3,14 +3,14 @@ layout: bootstrap_post
 title: SaltStack + VirtualBox + Vagrant
 date: 2014-04-23 22:11:00
 author: Oz Akan
-abstract: To create the next great SaltStack formula, you need less than I th`ought you did.
+abstract: To create the next great SaltStack formula, you need less than I thought you did.
 categories:
     - SaltStack
 ---
 
 ## Need for MyCloud
 
-It took a while for me to figure out that it might be a good idea to have a local environment where I can play with the SaltStack formulas we have been working on. Since I had easy access to cloud environment, like anyone on earth with a cloud account on one of the IaaS providers, my perception was the best way to develop SaltStack formulas was to have a salt-master on cloud and create as many minions as I need with salt-cloud. I would then destroy them, create them again. 
+It took a while for me to figure out that it might be a good idea to have a local environment where I can play with the SaltStack formulas we have been working on. Since I had easy access to cloud environment, like anyone on earth with a cloud account on one of the IaaS providers, my perception was the best way to develop SaltStack formulas was to have a salt-master on cloud and create as many minions as I need with salt-cloud. I would then destroy them, create them again.
 
 Cycle would go on.
 
@@ -70,15 +70,15 @@ Vagrant file will have this:
     VAGRANTFILE_API_VERSION = "2"
 
     Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-      
+
       config.vm.define "master" do |master|
         master.vm.box = "saucy"
         master.vm.host_name = "master"
-        master.vm.network :private_network, ip: "192.168.56.102"    
+        master.vm.network :private_network, ip: "192.168.56.102"
         master.vm.network "public_network", :bridge => 'en0: Ethernet (AirPort)'
       end
 
-      config.vm.define "minion" do |minion|    
+      config.vm.define "minion" do |minion|
         minion.vm.box = "saucy"
         minion.vm.host_name = "minion"
         minion.vm.network :private_network, ip: "192.168.56.103"
@@ -88,7 +88,7 @@ Vagrant file will have this:
           salt.minion_config = "./minion.conf"
           salt.minion_key = "./minion.pem"
           salt.minion_pub = "./minion.pub"
-        end 
+        end
       end  
 
     end
@@ -121,7 +121,7 @@ A few lines after, check if ```master``` is up
 
 ## SaltStack Section
 
-SaltStack has a bootstrap script which can be found at [https://github.com/saltstack/salt-bootstrap](https://github.com/saltstack/salt-bootstrap "SaltStack Bootstrap"). 
+SaltStack has a bootstrap script which can be found at [https://github.com/saltstack/salt-bootstrap](https://github.com/saltstack/salt-bootstrap "SaltStack Bootstrap").
 ([Documentation here](http://docs.saltstack.com/en/latest/topics/tutorials/salt_bootstrap.html "SaltStack Bootstrap Documentation"))
 
 We will use bootstrap scrips to install salt.
@@ -185,5 +185,3 @@ On master run this:
 All right. That was easy. We can create more minions by modifying Vagrant file. We may destroy and create minions to try our formulas from scratch without the need for any external resources. I believe this environment serves well for development purposes and can be replicated easily.
 
 Enough? Not really. Stay tuned.
-
-
