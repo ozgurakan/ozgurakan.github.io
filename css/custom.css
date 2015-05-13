@@ -30,11 +30,29 @@ p {
   color: #333333;
 }
 
+p.highlight {
+  font-family: 'Nova Square';
+  font-size: 20px;
+  line-height: 25px;
+  color: gray;
+}
+
+ul {
+ font-family: 'Open Sans', Georgia, Times, serif;
+ font-size: 18px;
+ line-height: 25px;
+ color: #333333;
+}
+
 .lyrics {
   text-align: right;
   font-family: 'Ubuntu Mono', Georgia, Times, serif;
   font-size: 14px;
   line-height: 16px;
   color: #333333;
+}
 
+a:hover {
+  text-decoration:none;
+  color:Navy;
 }

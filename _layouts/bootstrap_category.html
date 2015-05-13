@@ -18,9 +18,6 @@
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
     <!-- My Own styles -->
     <link href="/css/custom.css" rel="stylesheet">
 
@@ -51,7 +48,7 @@
         {% assign my_category = page.my_category | downcase %}
         {% for post in site.categories[my_category] %}
         <div class="starter-template">
-          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
           <p class="lead">{{ post.abstract }}</p>
           <small style="font-size: 75%">First Published: {{ post.date | date_to_string }},
           Filed Under:
