@@ -3,7 +3,7 @@ layout: bootstrap_post
 title: The Agile Dilemma
 date: 2015-05-12 21:10:00
 author: Oz Akan
-abstract: Would you build a feature which will block you later on?
+abstract: Would you build a feature even if you know it will block you later on?
 categories:
     - Development
 ---
