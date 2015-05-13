@@ -50,6 +50,6 @@ If we build a building that will have 5 stories but capable of holding 10, it re
 
 Would you fight to build the foundation for 10 stories first? Deciding on which approach to take depends on the business requirements. Question is;
 
-<p class="highlight">Is there a real immediate need for the first 5 stories so you will have to build something you know you will destroy soon after?</p>
+<p class="highlight">What is the business going to gain or loose by providing 5 stories quickly with expense of increasing the effort to build 10 stories?</p>
 
 Dilemma lies in how agile you want to be to get to the first 5 stories.
