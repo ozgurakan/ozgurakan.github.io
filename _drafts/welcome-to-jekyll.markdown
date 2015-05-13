@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: bootstrap_post
 title:  "Welcome to Jekyll!"
 date:   2013-12-30 21:17:09
 ---
