@@ -38,7 +38,7 @@ These are the basic principles on our imaginary building:
 - Building a story is 2 effort points.
 - Destroying a story is 1 effort point.
 
-Based on the information above, to build a 5 story building we will have to accomplish 30 points of work _( (4 + 2) * 5 = 30)_.
+Based on the information above, to build a 5 story building we will have to accomplish 30 points of work `( (4 + 2) * 5 = 30)`.
 
 An experienced architect will ask, are we really going to stop at 5th floor or is there a chance we will have to add more stories later on? If we will add, how many stories we might add?
 
