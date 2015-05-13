@@ -14,9 +14,9 @@ The beauty of agile development lies underneath the ability to change direction 
 
 <sub>Example: You are designing the database schema. You learn that John is planning to change the API for a resource to store a new field in database. You inform John that you already remember seeing that field in database. You both have a quick follow up discussion after the stand-up call and figure out that there is another API URL which covers the case. John won't need to make a change.</sub>
 
-Agile development is all about communication and that is to ensure team members know about each others work. They are there to ask hard questions to others. Each members needs to have an understanding on what matters the most for the product so that each developer can decide what will come next.
+Agile development is all about communication and that is to ensure team members know about each others work. They are there to ask hard questions to others. Each member needs to have an understanding on what matters the most for the product so that each developer can decide what will come next.
 
-Sometimes what comes next isn't what is seems it is and you will have to fight for it as it will be invisible for the most.
+Sometimes what comes next isn't what it seems it is and you will have to fight for it as it will be invisible for the most.
 
 Consider your team is takes with building a building. Task is something like this:
 
@@ -48,7 +48,7 @@ If we build a building that will have 5 stories but capable of holding 10, it re
 
    > On the other hand, first approach gave us 5 story building with 20 points less effort than the second approach.
 
-Deciding which approach to take depends on the business requirements.
+Would you fight to build the foundation for 10 stories first? Deciding on which approach to take depends on the business requirements. Question is;
 
 <p class="highlight">Is there a real immediate need for the first 5 stories so you will have to build something you know you will destroy soon after?</p>
 
