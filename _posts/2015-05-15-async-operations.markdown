@@ -8,7 +8,7 @@ categories:
     - Development
 ---
 
-This article is to demonstrate how to handle asynchronous operations in a RESTful API.
+This article demonstrates how to handle asynchronous operations in a RESTful API.
 
 Let's imagine we have a factory that builds cars. You want to order a car and not want to wait while it is being build.
 
