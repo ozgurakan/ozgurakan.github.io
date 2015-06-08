@@ -38,7 +38,7 @@ ip tools, so `ip` command is used to alter network namespaces. To list available
     
 We just booted up our linux VM and have no namespaces yet except the default one. The command we ran above is executed in the default network namespace. 
 
-## Two NameSpaces, 4 Virtual and One Physical Interface and 2 VLANs
+## Two Namespaces, 4 Virtual and One Physical Interface and 2 VLANs
 
 I want to create two network namespaces (`ns1` and `ns2`), create two virtual interfaces in each (`tap1a`, `tab1b`, `tap2a` and `tap2b`), use VLANs (tagged as `100` and `200`) to isolate traffic between these two interfaces and also want to connect physical interface (`eth0`) to the OvS bridge (`br1`) so default network namespace can also communicate with these network namespaces and could be used as gateway.
 
@@ -93,6 +93,7 @@ Let's create a bridge named `br1`
                     type: internal
         ovs_version: "2.0.2"
 
-Once a bridge is created, it gets an internal port with the same name of bridge `br1` which can have an IP address of it's own. See it's type is `internal`.
+Once a bridge is created, it gets an internal port with the same name of bridge `br1` which can have an IP address of it's own and it's type is `internal`.
 
-> stay tuned... rest coming soon...
+
+<p class="highlight">...stay tuned, rest coming soon...</p>
