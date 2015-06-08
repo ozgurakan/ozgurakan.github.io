@@ -78,7 +78,7 @@ My Ubuntu didn't have OvS, so I had to install.
     7b7c0dd0-efaf-4296-b485-030e863ff260
         ovs_version: "2.0.2
 
-We seem to have a OvS functional.
+We seem to have a functional OVS.
 
 ### Create New Switch (Bridge)
 
