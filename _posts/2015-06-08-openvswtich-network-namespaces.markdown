@@ -65,9 +65,9 @@ Let's add one more
 
 At this point we have two network namespaces. I want to create a process under ns1 and ns2 and then I want these two processes communicate over TCP/IP on a specific VLAN. We need NICs under these network namespaces which will establish the connection. These NICs have to be virtual as we can not assign physical interfaces.
 
-There a few ways to create virtual interfaces and connect them. Connecting two namespaces with veth pair, connecting veth pairs to a linux bridge or openvswitch and finally by using OvS (Open vSwitch) ports which is the method we will focus on.
+There a few ways to create virtual interfaces and connect them. Connecting two namespaces with veth pairs, connecting veth pairs to a linux bridge or openvswitch and finally by using OvS (Open vSwitch) ports which is the method we will focus on.
 
-So, let's create these two network namespaces using OvS ports.
+So, let's connect these two network namespaces using OvS ports.
 
 ### Install Open vSwitch
 
@@ -79,7 +79,7 @@ My Ubuntu didn't have OvS, so I had to install.
     7b7c0dd0-efaf-4296-b485-030e863ff260
         ovs_version: "2.0.2
 
-We seem to have a functional OVS.
+We seem to have a functional OvS.
 
 ### Create New Switch (Bridge)
 
@@ -94,7 +94,7 @@ Let's create a bridge named `br1`
                     type: internal
         ovs_version: "2.0.2"
 
-Once a bridge is created, it gets an internal port with the same name of bridge `br1` which can have an IP address of it's own and it's type is `internal`.
+Once a bridge is created, it gets an internal port with the same name of bridge `br1` which can have an IP address of it's own and as seen in the output of `ovs-vsctl show` it's type is `internal`.
 
 
 <p class="highlight">...stay tuned, rest coming soon...</p>
