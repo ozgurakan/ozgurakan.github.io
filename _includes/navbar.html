@@ -8,10 +8,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ site.url }}/index.html">{{ site.name }}</a>
+          <a class="navbar-brand" href="{{ site.url }}/index.html"><img alt="Brand" src="/images/logo_wide.png" height=30"></a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">            
+          <ul class="nav navbar-nav">
             {% for category in site.categories %}
             <li><a href="{{ site.url }}/{{ category | first }}.html">{{ category | first | capitalize }}</a></li>
             {% endfor %}
