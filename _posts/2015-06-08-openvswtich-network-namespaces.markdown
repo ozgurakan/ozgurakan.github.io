@@ -28,7 +28,10 @@ If you don't run linux on your computer or want to be on the safe side, as of tr
 
 > If you use vagrant, please go ahead ;)
 
-{% include vagrant_install.markdown %}
+
+Need help with createing a VM under vagant? 
+Check this short [vagrant tutorial]({% post_url 2015-01-01-vagrant-basics %}).
+
 
 <a name="start_of_OvS"></a> 
 ### List Network Namespaces

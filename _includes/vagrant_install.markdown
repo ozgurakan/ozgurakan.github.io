@@ -1,5 +1,3 @@
-If you already have a linux to work on, you may want to <a href="#end_of_vagrant_section">skip vagrant section</a>.
-
 ## Installing Vagrant and Virtualbox
 
 Download VirtualBox
@@ -111,4 +109,3 @@ Vagrant can ssh into your VM.
     # vagrant ssh testvm
     
 Now you can con use this VM for what ever purpose you like.
-<a name="end_of_vagrant_section"></a> 
