@@ -30,6 +30,7 @@ If you don't run linux on your computer or want to be on the safe side, as of tr
 
 {% include vagrant_install.markdown %}
 
+<a name="start_of_OvS"></a> 
 ### List Network Namespaces
 
 ip tools, so `ip` command is used to alter network namespaces. To list available namespaces;
@@ -62,7 +63,7 @@ Let's add one more
     ns2
     ns1
 
-At this point we have two network namespaces. I want to create a process under ns1 and ns2 and then I want these two processes communicate over TCP/IP on a specific VLAN. We need NICs under these network namespaces which will establish the connection. These NICs have to virtual though as we can not assign physical interfaces.
+At this point we have two network namespaces. I want to create a process under ns1 and ns2 and then I want these two processes communicate over TCP/IP on a specific VLAN. We need NICs under these network namespaces which will establish the connection. These NICs have to be virtual as we can not assign physical interfaces.
 
 There a few ways to create virtual interfaces and connect them. Connecting two namespaces with veth pair, connecting veth pairs to a linux bridge or openvswitch and finally by using OvS (Open vSwitch) ports which is the method we will focus on.
 
