@@ -1,6 +1,6 @@
 ---
 layout: bootstrap_post
-title: Linux Network Namespaces, OpenvSwitch and VLAN Tags
+title: Network Namespaces, OpenvSwitch and VLAN Tags
 date: 2015-06-08 18:10:00
 author: Oz Akan
 abstract: Finally you found that network namespaces are being used for so long in so many places.
