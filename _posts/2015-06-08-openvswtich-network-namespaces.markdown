@@ -46,7 +46,7 @@ We just booted up our linux VM and have no namespaces yet except the default one
 
 I want to create two network namespaces (`ns1` and `ns2`), create two virtual interfaces in each (`tap1a`, `tab1b`, `tap2a` and `tap2b`), use VLANs (tagged as `100` and `200`) to isolate traffic between these two interfaces and also want to connect physical interface (`eth0`) to the OvS bridge (`br1`) so default network namespace can also communicate with these network namespaces and could be used as gateway.
 
-![openvswitch diagram](/images/ovs_vlans.png)
+<img src="/images/ovs_vlans.png" class="img-responsive center-block" alt="openvswitch diagram">
 
 ### Create Network Namespace
 
@@ -98,6 +98,10 @@ Let's create a bridge named `br1`
         ovs_version: "2.0.2"
 
 Once a bridge is created, it gets an internal port with the same name of bridge `br1` which can have an IP address of it's own and as seen in the output of `ovs-vsctl show` it's type is `internal`.
+
+### Create Ports on OvS Bridge
+
+
 
 
 <p class="highlight">...stay tuned, rest coming soon...</p>
