@@ -1,7 +1,7 @@
 ---
 layout: bootstrap_post
 title: SDN vs NFV
-date: 2015-06-11 18:10:00
+date: 2015-06-11 17:29:00
 author: Oz Akan
 abstract: What is the difference between Software Defined Networking and Network Function Virtualization? You can't really compare these two as they are in a way complementary technologies but also can be implemented alone.
 categories:
