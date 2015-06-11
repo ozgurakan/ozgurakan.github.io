@@ -1,0 +1,22 @@
+---
+layout: bootstrap_post
+title: SDN vs NFV
+date: 2015-06-11 18:10:00
+author: Oz Akan
+abstract: What is the difference between Software Defined Networking and Network Function Virtualization? You can't really compare these two as they are in a way complementary technologies but also can be implemented alone.
+categories:
+    - Tips
+tags:
+    - Cloud
+    - Networking
+---
+
+
+SDN (**Software Defined Networking**), puts an API in front of the networking device so network rules can be programatically changed.
+
+NFV (**Network Function Virtualization**), moves network functions, like router, firewall, IDS/IPS from appliances to virtual machines. 
+Instead of using expensive appliances, these functions can be deployed on generic hardware and multiple time in different scales.
+
+Maybe there is no need to note at this point but let me write it anyway, these two technologies are not alternative to one another but complementary.
+
+OpenStack Neutron (api & qrouter) is a good example.
